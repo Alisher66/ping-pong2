@@ -92,13 +92,17 @@ class game {
         // this.posX = parseInt(1 + (Math.cos(degree * Math.PI / 180)) * 9) * pos;
         // this.posY = parseInt(1 + (Math.sin(degree * Math.PI / 180)) * 9) * pos;
 
-        let degreeArr = [15, 30, 45, 60, 75, 110, 120, 150, 165];
+        // let degreeArr = [15, 30, 45, 60, 75, 110, 120, 150, 165];
 
-        let degree = parseInt(Math.random() * 9);
+        // let degree = parseInt(Math.random() * 9);
 
         
-        this.posX = parseInt(1 + (Math.cos(degreeArr[degree] * Math.PI / 180)) * 9) * pos;
-        this.posY = parseInt(1 + (Math.sin(degreeArr[degree] * Math.PI / 180)) * 9) * pos;
+      
+
+        // this.posX = parseInt(1 + (Math.cos(degreeArr[degree] * Math.PI / 180)) * 9) * pos;
+        // this.posY = parseInt(1 + (Math.sin(degreeArr[degree] * Math.PI / 180)) * 9) * pos;
+        this.posX = (Math.random() * 5 + 5) * pos;
+        this.posY = Math.random() * 5 + 5
         this.getBallPos(ball);
     }
     getBallPos(ball) {
